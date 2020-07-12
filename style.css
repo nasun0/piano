@@ -1,68 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    justify-content: center;
     background: indianred;
-    margin:auto;
+    overflow:auto;
+    white-space: nowrap;
 }
 
 .white-keys kbd {
     text-align: center;
+    position: relative;
     font-family: 'Roboto Slab', serif;
     line-height: 900px;
     display: inline-block;
     background: white;
-    width: 100px;
-    height: 500px;
+    width: 110px;
+    height: 510px;
     border: lightgrey solid 5px;
     margin-left: -10px;
     font-size: 200%;
 }
 
 .container {
-    width: 740px;
-    height: 500px;
-    margin: 400px auto;
+    margin: auto;
 }
 
 .black-keys kbd {
+    display: inline-block;
+
     text-align: center;
     font-size: 200%;
     font-family: 'Roboto Slab', serif;
     color: white;
+
     line-height: 500px;
-    display: inline-block;
-    background: black;
     width: 75px;
     height: 350px;
-    margin-left: -10px;
+
+    background: black;
+
+    position: relative;
+    bottom: 15.95em;
 }
 
-#cSharp {
-    position: relative;
-    bottom: 510px;
-    left: 70px;
+#c-sharp {
+    left: 1.8em;
 }
 
-#dSharp {
-    position: relative;
-    bottom: 510px;
-    left: 105px;
+#d-sharp {
+    left: 2.6em;
 }
 
-#fSharp {
-    position: relative;
-    bottom: 510px;
-    left: 243px;
+#f-sharp {
+    left: 6.65em;
 }
 
-#gSharp {
-    position: relative;
-    bottom: 510px;
-    left: 280px;
+#g-sharp {
+    left: calc(6.65em + .8em);
 }
 
-#aSharp {
-    position: relative;
-    bottom: 510px;
-    left: 313px;
+#a-sharp {
+    left: calc(6.65em + .8em * 2);
 }
